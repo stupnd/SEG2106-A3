@@ -1,0 +1,11 @@
+‹program>:: = begin < statement list> end
+‹statement list> ::= <statement> ; <statement list'>
+‹statement list'> ::= <statement list>
+‹statement list'> ::= €
+‹statement> ::= id = ‹expression>
+‹expression> ::= <factor> <expression' >
+‹expression'>::= + < factor>
+‹expression'>::= - ‹factor>
+‹expression' > ::= €
+<factor> ::= id
+<factor> :: = num

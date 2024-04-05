@@ -1,0 +1,12 @@
+FIRST (program) = {begin}
+FIRST(statement_list)=FIRST(statement) = {id}
+FIRST(statement_list)=FIRST(statement_list) u {8} = {id, &}
+FIRST(expression)=FIRST(factor) = {id, num}
+FIRST(expression0={+, -, e}
+FOLLOW(program)={$}
+FOLLOW(statement_list)=(end)
+FOLLOW(statement_list') = FOLLOW(statement_list) = {end}
+FOLLOW(statement) = li)
+FOLLOW(expression) = FOLLOW(statement) = (;)
+FOLLOW(expression) = (;)
+FOLLOW(factor) = [FIRST(expression') - €] u FOLLOW(expression) u FOLLOW(expression')= (+, - ;)
